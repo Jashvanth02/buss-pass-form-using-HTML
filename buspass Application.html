@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Application</title>
+    <style>
+        
+        header{
+            background-color: rgb(167, 185, 212);
+            padding:5px;
+            text-align: center;
+            width:800px;
+            border-radius:15px;
+            margin-bottom: 20px;
+        }
+        legend{
+            background-color: hwb(206 10% 43%);
+            margin-top: 10px;
+            padding:5px;
+            border-radius: 3px;
+            color:rgb(235, 228, 228);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            
+        }
+        fieldset{
+           
+            width:800px;
+            margin: auto;
+            margin-bottom:10px;
+            background-color: rgb(241, 228, 228);
+            
+        }
+        label{
+           margin-left:10px;
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+          
+           
+        }
+        .styleinput{
+            margin-left:40px;
+            width:200px;
+            height:25px;
+        }
+        span{
+            color: red;
+        }
+        input{
+            margin-left:20px;
+            margin-bottom: 10px;
+        
+        }
+        select{
+            margin-left:40px;
+            width:200px;
+            height:28px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom:10px;
+        }
+       .button{
+        background-color: rgb(250, 110, 243);
+        padding:5px;
+        color:white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        border-radius: 3px;
+        width:100px;
+
+       }
+        div{
+            text-align: center;
+            margin-top: 20px;
+            padding:10px;
+        }
+
+    
+    </style>
+    
+</head>
+<body >
+     <center>
+        <img src="/images/TGSRTC_logo_1_701ee18042.png"width="100px" height="100px" alt="TGSRTC">
+        <h1 style="color: blue;">TELANGANA STATE ROAD TRANSPORT CORPORATION</h1>
+        <h2>GENERAL BUSS PASS APPLICATION</h2>
+     </center>
+    <form action="/success.html" >
+     <fieldset>
+        <legend  >Applicant Details</legend>   
+        <label for="name">Name : <span class="required">*</span></label>
+        <input type="text" placeholder="Enter Name" id="name"  required><br><br>
+        Date of birth
+        <input type="date"placeholder="dd/mm/yyyy" required><br><br>
+        Age As on: <span class="required">*</span>
+        <input  type="text"  > <br><br>
+        WhatsApp No :
+        <input type="text" > <br><br>
+        photo : <span class="required">*</span>
+        <input type="file"> <br><br>
+        Father's/Guardian's Name <span class="required">*</span>
+        <input type="text" > <br><br>
+        Gender
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female <br><br>
+        Aadhar No:
+        <input type="number"> <br><br>
+        E-mail Id <span class="required">*</span>
+        <input type="email">
+      </fieldset>
+
+      <fieldset>
+        <legend style="background-color:hwb(206 10% 43%) ;color: azure;">Residental Address Details</legend>
+        Applicant's Address <span class="required">*</span>
+        <textarea name="" id=""></textarea><br><br>
+        Mandal <span class="required">*</span>
+        <input type="text">
+        <select name="" id="">
+            <option value="">Hyderabad</option>
+        </select> <br><br>
+        District <span class="required">*</span>
+        <input type="text">
+        <select name="" id="">
+            <option value="">Hyderabad</option>
+        </select> <br><br>
+        Village <span class="required">*</span>
+        <input type="text">
+        <select name="" id="">
+            <option value=""> Hyderabad</option>
+        </select> <br><br>
+        pincode <span class="required">*</span>
+        <input type="text" maxlength="6">
+      </fieldset>
+
+     <fieldset>
+        <legend style="background-color: hwb(206 10% 43%);color: azure;">Pass Type Details</legend>
+        city <span class="required">*</span>
+        <input type="text">
+        <select name="" id="">
+            <option value="">Hyderabad</option> 
+        </select> <br><br>
+        Pass Type <span class="required">*</span>
+        <select name="" id="">
+            <option value="" selected disabled>-select-</option>
+            <option value="">GREATER PASS</option>
+            <option value="">GREATER ORDINARY ROUTE PASS</option>
+            <option value="">GREATER METRO EXPRESS ROUTE PASS</option>
+            <option value="">ORDINARY PASS</option>
+            <option value="">METRO EXPRESS PASS</option>
+        </select>
+     </fieldset>
+
+     <fieldset>
+        <legend style="background-color: hwb(206 10% 43%);color: azure;">Mode of Payment & Pass Collection</legend>
+        Payment Mode <span class="required">*</span>
+        <select name="" id="">
+            <option value="" selected disabled>Select Payment Mode</option>
+            <option value="">Payment at counter</option>
+        </select><br><br>
+        Pass Delivery Mode
+        <select name="" id="">
+            <option value="" selected disabled>Select Pass Delivery Mode</option>
+            <option value="">At Counter</option>
+        </select> <br><br>
+        Center at which you want to Collect Pass <span class="required">*</span>
+        <select name="" id="">
+            <option value="" selected disabled>-select-</option>
+            <option value="">kuKatpally</option>
+            <option value="">KPHB</option>
+            <option value="">Nizampet</option>
+            <option value="">Jntu</option>
+            <option value="">Miyapur</option>
+        </select>
+     </fieldset>
+
+     <center>
+        <img src="./images/capcha.png"width="150px"  height="40px" alt=""><br><br>
+        <input type="text"><br><br>
+     <input type="submit" value="submit" style="background-color: crimson;">
+     </center>
+    </form> 
+</body>
+</html>
